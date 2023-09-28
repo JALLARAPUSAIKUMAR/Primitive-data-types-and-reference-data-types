@@ -1,0 +1,113 @@
+<html>
+<head>
+    
+    <title>Data Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: azure;
+        }
+        
+            
+        
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            width: 300px;
+            background-color: beige;
+           
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <center>
+        
+    <h1 style="color:red"><big><i>Different type of Data types:</h1></i></big><hr>
+        <marquee direction="right"><h1 style="color: fuchsia">1.PRIMITIVE DATA TYPES:</h1></marquee>
+    <div class="container">
+        <div class="card" id="stringCard" style="color: orange">
+            <h2>String</h2>
+            <p id="stringValue"></p>
+        </div>
+        <div class="card" id="NumberCard" style="color: darkgreen">
+            <h2>Number</h2>
+            <p id="NumberValue"></p>
+        </div>
+        <div class="card" id="booleanCard" style="color: darkgoldenrod">
+            <h2>Boolean</h2>
+            <p id="booleanValue"></p>
+        </div>
+        <div class="card" id="NullCard" style="color: chartreuse" >
+            <h2>Null</h2>
+            <p id="NullValue"></p>
+        </div>
+        <div class="card" id="UndefinedCard">
+            <h2>Undefined</h2>
+            <p id="UndefinedValue"></p>
+        </div>
+        
+    </div>
+        
+        
+       <marquee direction="left"> <h1 style="color: green"><big>2.REFERENCE DATA TYPES</big></h1></marquee>
+         <div class="container">
+        <div class="card" id="ObjectCard" style="color:aqua">
+            <h2>Object</h2>
+            <p id="ObjectValue"></p>
+        </div>
+              
+        <div class="card" id="ArrayCard" style="color:slateblue">
+            <h2>Array</h2>
+            <p id="ArrayValue"></p>
+        </div>
+
+    <script>
+        
+        document.getElementById('stringCard').addEventListener('click', function() {
+            document.getElementById('stringValue').textContent = 'Hello, World!';
+        });
+
+        document.getElementById('NumberCard').addEventListener('click', function() {
+            document.getElementById('NumberValue').textContent = '42';
+        });
+
+        document.getElementById('booleanCard').addEventListener('click', function() {
+            document.getElementById('booleanValue').textContent = 'true';
+        });
+         document.getElementById('NullCard').addEventListener('click', function() {
+            document.getElementById('NullValue').textContent = 'No data available';
+        });
+
+         document.getElementById('UndefinedCard').addEventListener('click', function() {
+            document.getElementById('UndefinedValue').textContent = 'variable value is not declared yet';
+        });
+        document.getElementById('ObjectCard').addEventListener('click', function() {
+            document.getElementById('ObjectValue').textContent = 'Profession:Developer';
+        });
+        document.getElementById('ArrayCard').addEventListener('click', function() {
+            document.getElementById('ArrayValue').textContent = 'index:values';
+        });
+
+
+
+    </script>
+        </center>
+</body>
+</html>
